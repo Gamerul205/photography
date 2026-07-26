@@ -36,7 +36,40 @@ layout: default
             <div>
                 <section>
                     <h2>{{ site.footer.name }}</h2>
-                    <p>{{ site.footer.bio }}</p>
+<div class="lang-toggle">
+    <button onclick="showLang('en')" id="btn-en" class="lang-btn active">EN</button>
+    <button onclick="showLang('ro')" id="btn-ro" class="lang-btn">RO</button>
+</div>
+<p id="bio-en" class="bio-text">{{ site.footer.bio }}</p>
+<p id="bio-ro" class="bio-text" style="display:none;">{{ site.footer.bio_ro }}</p>
+
+<style>
+  .lang-toggle { margin-bottom: 10px; }
+  .lang-btn {
+    padding: 5px 12px;
+    margin-right: 6px;
+    border: 1px solid #999;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  .lang-btn.active {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+  }
+</style>
+
+<script>
+  function showLang(lang) {
+    document.getElementById('bio-en').style.display = lang === 'en' ? 'block' : 'none';
+    document.getElementById('bio-ro').style.display = lang === 'ro' ? 'block' : 'none';
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-ro').classList.toggle('active', lang === 'ro');
+  }
+</script>
                     <p>{{ site.footer.github }}</p>
                 </section>
                 <section>
