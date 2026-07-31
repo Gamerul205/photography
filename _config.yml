@@ -6,18 +6,18 @@ image_thumbs_loc: "/images/thumbs"
 google_analytics: "UA-46465113-2"
 
 # UI configs
-title: "Photography by Ionut Volner"
+title: "Portfolio by Ionut Volner"
 subtitle: "See the world through my eyes!"
 author: "Ionut Volner"
 header:
- title: "Photography"
+ title: "Portfolio"
  subtitle: "by Ionut Volner"
 footer:
  name: "Hey, my name is Ionut"
  bio: "I'm a photographer with a growing portfolio built from personal projects and ongoing practice. I focus on portraits and street photography, with an eye for composition, light, and detail."
  bio_ro: "Sunt fotograf, cu un portofoliu în continuă dezvoltare, construit din proiecte personale și practică constantă. Mă concentrez pe fotografia de portret și stradă, cu atenție la compoziție, lumină și detalii."
  github: ""
-web_design: "AJ"
+web_design: ""
 
 social_urls:
   instagram: "https://www.instagram.com/ionut_volner"
